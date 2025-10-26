@@ -25,7 +25,6 @@ y_logdist = np.zeros((3, len(distance)))
 y_lognorm = np.zeros((3, len(distance)))
 
 
-
 for k in range(0, 3):
     y_free[k,:] = PL_free.PL_free(fc, distance, Gt[k], Gr[k])
     y_logdist[k, :] = PL_logdist_or_norm.PL_logdist_or_norm(fc, distance, d0, Exp[k])
